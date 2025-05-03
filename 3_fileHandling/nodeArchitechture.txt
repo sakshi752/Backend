@@ -1,0 +1,3 @@
+- client request a server, there event queue comes into play. each request keeps on queuing in event queue. and those request is executed one by one in FIFO order in event loop.
+
+- request can be blocking operations(sync) and non blocking(async)
