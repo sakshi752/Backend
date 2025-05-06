@@ -1,3 +1,9 @@
 - client request a server, there event queue comes into play. each request keeps on queuing in event queue. and those request is executed one by one in FIFO order in event loop.
 
-- request can be blocking operations(sync) and non blocking(async)
+- request can be blocking operations(synchronous) and non blocking(asyncsynchronous)
+
+- by synchronous we mean that code will be executed line by line 
+
+- by asynchronous we mean that time consuming code will be executed in background and remaining code will be executed before hand
+
+- blocking operation need a thread/worker to perform task.(thread pool is pool of thread which is responsible to perform blocking tasks). threads are limited and by default we have 4 threads. If we are developing high scale product it is good practice to go for non-blocking operations 
